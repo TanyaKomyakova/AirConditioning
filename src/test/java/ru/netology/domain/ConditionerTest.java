@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ConditionerTest {
 
     @org.junit.jupiter.api.Test
-    void TestIncreaseCurrentTemperature() {
+    void testIncreaseCurrentTemperature() {
         Conditioner conditioner = new Conditioner();
         conditioner.setOn(true);
         conditioner.setCurrentTemperature(15);
@@ -15,11 +15,10 @@ class ConditionerTest {
         int expected = 16;
         int actual = conditioner.getCurrentTemperature();
         assertEquals(expected, actual);
-
     }
 
     @Test
-    public void TestdecreaseCurrentTemperature() {
+    public void testdecreaseCurrentTemperature() {
         Conditioner conditioner = new Conditioner();
         conditioner.setOn(true);
         conditioner.setCurrentTemperature(16);
